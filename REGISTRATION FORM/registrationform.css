@@ -28,5 +28,26 @@ fieldset
 {
     border: none;
     padding: 2rem 0 2rem 0;
-    border-bottom: 2.5px solid white;
+    border-bottom: 2.5px solid #3b3b4f;
+}
+fieldset:last-of-type
+{
+    border-bottom: none;
+}
+input, textarea, select
+{
+    font-size: 16px;
+    font-family: Tahoma;
+    color: white;
+    width: 100%;
+    margin: 10px 0 0 0;
+    background-color: #0a0a2f ;
+    border: 1px solid #0a0a2f;
+    min-height: 2em;
+}
+.inline
+{
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
 }

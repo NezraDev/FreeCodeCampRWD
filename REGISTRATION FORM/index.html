@@ -21,14 +21,15 @@
                         <label for ="personal-account"><input type ="radio" name = "account_type" id ="personal-account" checked> Personal</label>
                         <label for ="business-account"><input type ="radio" name = "account_type" id ="business-account" required> Business</label>
                         <label></label>
-                        <legend>Account type (required) </legend>>
+                        <legend>Account type (required) </legend>
                         <label for ="terms-and-conditions"><input type ="checkbox" name ="terms_and_conditions" id ="terms-and-conditions" required> I accept the <a href ="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a></label>
                     </fieldset>
+
                     <fieldset> 
                         <label for ="profile-picture">Upload your Selfie Photo <input type ="file" name ="profile_picture" id ="profile-picture"></label>
                         <label for ="age">Input your age (years): <input type ="number" min ="13" max ="120" name ="age" id ="age"></label>
                         <label for = "referral">How did you hear about us?</label>
-                        <select id ="referral" >
+                        <select id ="referral">
                             <option value = "">(Select One)</option>
                             <option value = "1">freeCodeCamp News</option>
                             <option value = "2">freeCodeCamp YouTube Channel</option>
@@ -37,12 +38,9 @@
                         </select>
                         <label for ="bio">Provide a Bio:
                             <textarea id ="bio" rows = "3" cols ="30" placeholder = "State your Bio..."></textarea>
-                        
                         </label>
                         
                     </fieldset>
                     <input type ="submit" value ="Submit">
-
-        
     </body>
     </html>

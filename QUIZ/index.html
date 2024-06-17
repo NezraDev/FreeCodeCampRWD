@@ -10,36 +10,35 @@
 
 </head>
 <body>
-    <header>""
-        <img src = "https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg">
+    <header>
+        <img id ="logo" src = "https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg">
         <h1>HTML/CSS Quiz</h1>
         <nav>
             <ul>
-                <li><a href="#student-info">INFO</a></li>
-                <li><a href="#html-questions">HTML</a></li>
-                <li><a href="#css-questions">CSS</a></li>
+                <li><a href="#student-info" accesskey="s">INFO</a></li>
+                <li><a href="#html-questions" accesskey="h">HTML</a></li>
+                <li><a href="#css-questions" accesskey="c">CSS</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <form action ="https://freecodecamp.org/practice-project/accessibility-quiz" method ="POST">
-            <section role ="region" aria-labelledby="student-info"><h2 id ="student-info">Student Info</h2></section>
+            <section role ="region" aria-labelledby="student-info">
+                <h2 id ="student-info">Student Info</h2>
             
             <div class ="info">
-                <label for ="students-name">Name
-                    <input id ="students-name" name="name" type="text">
-                </label>
+                <label for ="student-name">Name</label>
+                    <input id ="student-name" name="name" type="text">
             </div>
             <div class ="info">
-                <label for ="email-address">Email
+                <label for ="email-address">Email</label>
                     <input id ="email-address" name="email" type="email">
-                </label>
-            <div class ="info">
-                <label for ="date-of-birth">D.O.B<span class ="sr-only">(Date of Birth)</span>
-                    <input id ="date-of-birth" name="D.O.B" type="date" >
-                </label>
-            </div>   
             </div>
+            <div class ="info">
+                <label for ="date-of-birth">D.O.B<span class ="sr-only">(Date of Birth)</span></label>
+                    <input id ="date-of-birth" name="date-of-birth" type="date" >
+            </div>   
+
             <section role ="region" aria-labelledby="html-questions"><h2 id ="html-questions">HTML Questions</h2>
             <div class ="question-block">
                 <p>1</p>
@@ -74,7 +73,7 @@
                 </fieldset>
             </div>
             </section>
-            <section role ="region" aria-labelledby="css-questions"><h2 id ="css-questions">CSS Questions</h2></section>
+            <section role ="region" aria-labelledby="css-questions"><h2 id ="css-questions">CSS Questions</h2>
             <div class ="formrow">
                 <div class ="question-block">
                     <label for ="choices">Is CSS acronym is Cascading Style Sheet?</label>
@@ -93,7 +92,8 @@
                     <textarea name ="ask-questions" id ="ask-questions" cols ="50" rows ="10" placeholder="Feel free to ask..."></textarea>
                 </div>
             </div>
-                <input type="submit" value ="Send">
+                <button type="submit">Send</button>
+            </section>
         </form>
     </main>
         <footer>

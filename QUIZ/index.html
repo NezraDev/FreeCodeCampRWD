@@ -53,7 +53,7 @@
                         </li>
                     </ul>
                     <legend>
-                            True
+                        The legend element represents a caption for the content of its parent fieldset element
                     </legend>
                 </fieldset>
             </div>
@@ -62,14 +62,14 @@
                 <fieldset class ="question" name ="html-question-two">
                     <ul class ="answers-list">
                         <li>
-                            <label for ="q2-a1"><input type ="radio" id ="q2-a1" value ="true" name ="q2">The legend element represents a caption for the content of its parent fieldset element</label>
+                            <label for ="q2-a1"><input type ="radio" id ="q2-a1" value ="true" name ="q2">True</label>
                         </li>
                         <li>
-                            <label for ="q2-a2"><input type="radio" id ="q2-a2" value ="false" name ="q2">A label element nesting an input element is required to have a for attribute with the same value as the input's id</label>
+                            <label for ="q2-a2"><input type="radio" id ="q2-a2" value ="false" name ="q2">False</label>
                         </li>
                     </ul>
                     <legend>
-                        False
+                        A label element nesting an input element is required to have a for attribute with the same value as the input's id
                     </legend>
                 </fieldset>
             </div>
@@ -77,20 +77,32 @@
             <section role ="region" aria-labelledby="css-questions"><h2 id ="css-questions">CSS Questions</h2></section>
             <div class ="formrow">
                 <div class ="question-block">
-                    <label>Is CSS acronym is Cascading Style Sheet?</label>
+                    <label for ="choices">Is CSS acronym is Cascading Style Sheet?</label>
                 </div>
                 <div class ="answer">
+                    <select name ="choices" id ="choices" required>
+                        <option value ="">Select an option</option>
+                        <option value ="yes">Yes</option>
+                        <option value ="no">No</option>
+                    </select>
                 </div>
                 <div class ="question-block">
-                    <label>Is CSS refers to styling and designing web pages?</label>
+                    <label for ="ask-questions">Is CSS refers to styling and designing web pages?</label>
                 </div>
                 <div class ="answer">
+                    <textarea name ="ask-questions" id ="ask-questions" cols ="50" rows ="10" placeholder="Feel free to ask..."></textarea>
                 </div>
-
-               
             </div>
+                <input type="submit" value ="Send">
         </form>
     </main>
-
+        <footer>
+            <address>
+                <a href ="https://freecodecamp.org">freeCodeCamp</a><br/>
+                San Fransisco<br/>
+                California<br/>
+                USA
+            </address>
+        </footer>
 </body>
 </html>

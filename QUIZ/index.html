@@ -26,22 +26,69 @@
             <section role ="region" aria-labelledby="student-info"><h2 id ="student-info">Student Info</h2></section>
             
             <div class ="info">
-                <label for ="students-name">Student's Name
-                    <input id ="students-name">
+                <label for ="students-name">Name
+                    <input id ="students-name" name="name" type="text">
                 </label>
             </div>
             <div class ="info">
-                <label for ="email-address">Email Address
-                    <input id ="email-address">
+                <label for ="email-address">Email
+                    <input id ="email-address" name="email" type="email">
                 </label>
             <div class ="info">
-                <label for ="date-of-birth">Date of Birth
-                    <input id ="date-of-birth">
+                <label for ="date-of-birth">D.O.B<span class ="sr-only">(Date of Birth)</span>
+                    <input id ="date-of-birth" name="D.O.B" type="date" >
                 </label>
             </div>   
             </div>
-            <section role ="region" aria-labelledby="html-questions"><h2 id ="html-questions">HTML Questions</h2></section>
+            <section role ="region" aria-labelledby="html-questions"><h2 id ="html-questions">HTML Questions</h2>
+            <div class ="question-block">
+                <p>1</p>
+                <fieldset class ="question" name="html-question-one">
+                    <ul class ="answers-list">
+                        <li>
+                            <label for ="q1-a1"><input type ="radio" id ="q1-a1" value ="true" name ="q1">True</label>
+                        </li>
+                        <li>
+                            <label for ="q1-a2"><input type="radio" id ="q1-a2" value ="false" name = "q1">False</label>
+                        </li>
+                    </ul>
+                    <legend>
+                            True
+                    </legend>
+                </fieldset>
+            </div>
+            <div class ="question-block">
+                <p>2</p>
+                <fieldset class ="question" name ="html-question-two">
+                    <ul class ="answers-list">
+                        <li>
+                            <label for ="q2-a1"><input type ="radio" id ="q2-a1" value ="true" name ="q2">The legend element represents a caption for the content of its parent fieldset element</label>
+                        </li>
+                        <li>
+                            <label for ="q2-a2"><input type="radio" id ="q2-a2" value ="false" name ="q2">A label element nesting an input element is required to have a for attribute with the same value as the input's id</label>
+                        </li>
+                    </ul>
+                    <legend>
+                        False
+                    </legend>
+                </fieldset>
+            </div>
+            </section>
             <section role ="region" aria-labelledby="css-questions"><h2 id ="css-questions">CSS Questions</h2></section>
+            <div class ="formrow">
+                <div class ="question-block">
+                    <label>Is CSS acronym is Cascading Style Sheet?</label>
+                </div>
+                <div class ="answer">
+                </div>
+                <div class ="question-block">
+                    <label>Is CSS refers to styling and designing web pages?</label>
+                </div>
+                <div class ="answer">
+                </div>
+
+               
+            </div>
         </form>
     </main>
 
